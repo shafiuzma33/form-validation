@@ -4,7 +4,7 @@ var password = document.getElementById('password');
 var passwordMsg = document.getElementById('password-msg');
 
 userName.addEventListener('input', function (e) {
-    var regex = /^[A-Za-z0-9]{8,}$/;
+    var regex = /^[A-Za-z0-9]{8}$/;
     var res = regex.test(e.target.value);
 
     if (res) {
@@ -17,7 +17,7 @@ userName.addEventListener('input', function (e) {
 });
 
 password.addEventListener('input', function (e) {
-    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,}$/;
+    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8}$/;
     var res = regex.test(e.target.value);
 
     if (res) {
